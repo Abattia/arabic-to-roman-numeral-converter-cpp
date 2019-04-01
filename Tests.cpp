@@ -1,6 +1,12 @@
 #include <gtest/gtest.h>
 #include "ArabicToRoman.h"
 
+TEST(ArabicToRoman, ShouldReturnxX) {
+	string result = ToRoman(10);
+	
+	EXPECT_EQ("", result);
+}
+
 TEST(ArabicToRoman, ShouldReturnIII) {
 	string result = ToRoman(3);
 	
