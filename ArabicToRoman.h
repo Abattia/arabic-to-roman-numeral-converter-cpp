@@ -3,11 +3,11 @@
 using std::string;
 
 string ToRoman(int anArabic) {
-	if(anArabic == 3) {
-		return "III";
-	}
-	if(anArabic == 2) {
-		return "II";
-	}
-	return "I";
+	string result = string();
+
+	do {
+		result += "I";
+		anArabic -= 1;
+	while (anArabic >= 1);
+	return result;
 }
